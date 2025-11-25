@@ -1,475 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Marketing Workshop - Master Online Growth Strategies</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="15" fill="#ff6b35" stroke="#ff6b35" stroke-width="2"/>
-                        <path d="M15 20L18 23L25 16" stroke="#0a0e27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20 8V12M20 28V32M8 20H12M28 20H32" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <span>Digital Growth Academy</span>
-                </div>
-                <button class="register-btn" onclick="scrollToForm()">Register Free</button>
-            </div>
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle
+                cx="20"
+                cy="20"
+                r="15"
+                fill="#ff6b35"
+                stroke="#ff6b35"
+                stroke-width="2"
+              />
+              <path
+                d="M15 20L18 23L25 16"
+                stroke="#0a0e27"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20 8V12M20 28V32M8 20H12M28 20H32"
+                stroke="#ff6b35"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span>Digital Growth Academy</span>
+          </div>
+          <button class="register-btn" onclick="scrollToForm()">
+            Register Free
+          </button>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="grid-overlay"></div>
-            <div class="glow-orb orb-1"></div>
-            <div class="glow-orb orb-2"></div>
-            <div class="glow-orb orb-3"></div>
-        </div>
-        
-        <div class="container">
-            <div class="hero-wrapper">
-                <div class="hero-left">
-                    <div class="hero-badge">
-                        <span class="badge-dot"></span>
-                        <span>🔥 Live Workshop - Limited Seats</span>
-                    </div>
-                    
-                    <h1 class="hero-title">
-                        Unlock Your
-                        <span class="gradient-text">Digital Marketing</span>
-                        Potential Today
-                    </h1>
-                    
-                    <p class="hero-description">
-                        Discover advanced tactics for search optimization, influencer partnerships, conversion funnels, and ROI-focused campaigns. 
-                        Elevate your brand visibility with cutting-edge strategies taught by marketing leaders.
-                    </p>
-                    
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">2500+</div>
-                            <div class="stat-label">Happy Learners</div>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <div class="stat-number">4.9/5</div>
-                            <div class="stat-label">Student Reviews</div>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <div class="stat-number">6 Hrs</div>
-                            <div class="stat-label">Power-Packed Session</div>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-cta">
-                        <button class="cta-primary" onclick="scrollToForm()">
-                            <span>Register Now - ₹1000</span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <button class="cta-secondary" onclick="document.querySelector('.about').scrollIntoView({behavior: 'smooth'})">
-                            <span>Learn More</span>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="hero-right">
-                    <div class="info-cards">
-                        <div class="info-card card-date">
-                            <div class="card-header">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
-                                    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
-                                    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                                <span>Workshop Date</span>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-title">January 12, 2026</div>
-                                <div class="card-subtitle">10:30 AM - 4:30 PM IST</div>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card card-mode">
-                            <div class="card-header">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M12 2C12 2 15 5 15 12C15 19 12 22 12 22M12 2C12 2 9 5 9 12C9 19 12 22 12 22M2 12H22" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                                <span>Workshop Mode</span>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-title">100% Online</div>
-                                <div class="card-subtitle">Join from anywhere via Zoom</div>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card card-price">
-                            <div class="card-header">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                                <span>Special Offer</span>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-title">₹1000 Only</div>
-                                <div class="card-subtitle"><s>₹2999</s> Special launch offer</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-stack">
-                        <div class="tech-item">PPC Campaigns</div>
-                        <div class="tech-item">Instagram Marketing</div>
-                        <div class="tech-item">Keyword Research</div>
-                        <div class="tech-item">Conversion Tracking</div>
-                        <div class="tech-item">Automation Tools</div>
-                        <div class="tech-item">Viral Content</div>
-                    </div>
-                </div>
+      <div class="hero-background">
+        <div class="grid-overlay"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-left">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span>🔥 Live Workshop - Limited Seats</span>
             </div>
+
+            <h1 class="hero-title">
+              Unlock Your
+              <span class="gradient-text">Digital Marketing</span>
+              Potential Today
+            </h1>
+
+            <p class="hero-description">
+              Discover advanced tactics for search optimization, influencer
+              partnerships, conversion funnels, and ROI-focused campaigns.
+              Elevate your brand visibility with cutting-edge strategies taught
+              by marketing leaders.
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number">2500+</div>
+                <div class="stat-label">Happy Learners</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <div class="stat-number">4.9/5</div>
+                <div class="stat-label">Student Reviews</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <div class="stat-number">6 Hrs</div>
+                <div class="stat-label">Power-Packed Session</div>
+              </div>
+            </div>
+
+            <div class="hero-cta">
+              <button class="cta-primary" onclick="scrollToForm()">
+                <span>Register Now - ₹1000</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M7 3L14 10L7 17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="cta-secondary"
+                onclick="document.querySelector('.about').scrollIntoView({behavior: 'smooth'})"
+              >
+                <span>Learn More</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="info-cards">
+              <div class="info-card card-date">
+                <div class="card-header">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="3"
+                      y1="10"
+                      x2="21"
+                      y2="10"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="8"
+                      y1="2"
+                      x2="8"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="16"
+                      y1="2"
+                      x2="16"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <span>Workshop Date</span>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">January 12, 2026</div>
+                  <div class="card-subtitle">10:30 AM - 4:30 PM IST</div>
+                </div>
+              </div>
+
+              <div class="info-card card-mode">
+                <div class="card-header">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M12 2C12 2 15 5 15 12C15 19 12 22 12 22M12 2C12 2 9 5 9 12C9 19 12 22 12 22M2 12H22"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <span>Workshop Mode</span>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">100% Online</div>
+                  <div class="card-subtitle">Join from anywhere via Zoom</div>
+                </div>
+              </div>
+
+              <div class="info-card card-price">
+                <div class="card-header">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M12 6V12L16 14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <span>Special Offer</span>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">₹1000 Only</div>
+                  <div class="card-subtitle">
+                    <s>₹2999</s> Special launch offer
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-stack">
+              <div class="tech-item">PPC Campaigns</div>
+              <div class="tech-item">Instagram Marketing</div>
+              <div class="tech-item">Keyword Research</div>
+              <div class="tech-item">Conversion Tracking</div>
+              <div class="tech-item">Automation Tools</div>
+              <div class="tech-item">Viral Content</div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="about">
-        <div class="container">
-            <h2 class="section-title">About The Workshop</h2>
-            <p class="section-subtitle">Complete marketing mastery program designed for business growth</p>
-            
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">🎯</div>
-                    <h3>Workshop Curriculum</h3>
-                    <ul>
-                        <li>Advanced SEO Techniques & Link Building</li>
-                        <li>Instagram & LinkedIn Growth Hacks</li>
-                        <li>PPC Campaign Management & Optimization</li>
-                        <li>Persuasive Copywriting for Conversions</li>
-                        <li>Marketing Automation & Lead Nurturing</li>
-                        <li>Data Analytics & Attribution Modeling</li>
-                    </ul>
-                </div>
-                
-                <div class="about-card">
-                    <div class="about-icon">👨‍🏫</div>
-                    <h3>Your Mentors</h3>
-                    <ul>
-                        <li>Marketing professionals with 15+ years expertise</li>
-                        <li>Google Analytics & HubSpot certified trainers</li>
-                        <li>Award-winning campaign strategists</li>
-                        <li>Hands-on, actionable learning methodology</li>
-                        <li>Real-world case study walkthroughs</li>
-                        <li>Lifetime community access & support</li>
-                    </ul>
-                </div>
-                
-                <div class="about-card">
-                    <div class="about-icon">🏆</div>
-                    <h3>Exclusive Benefits</h3>
-                    <ul>
-                        <li>Professional certification badge</li>
-                        <li>100+ ready-to-use templates & swipe files</li>
-                        <li>Permanent access to video replays</li>
-                        <li>Private Slack community membership</li>
-                        <li>1-on-1 strategy call worth ₹5000</li>
-                        <li>Premium marketing tools & software guides</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">About The Workshop</h2>
+        <p class="section-subtitle">
+          Complete marketing mastery program designed for business growth
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">🎯</div>
+            <h3>Workshop Curriculum</h3>
+            <ul>
+              <li>Advanced SEO Techniques & Link Building</li>
+              <li>Instagram & LinkedIn Growth Hacks</li>
+              <li>PPC Campaign Management & Optimization</li>
+              <li>Persuasive Copywriting for Conversions</li>
+              <li>Marketing Automation & Lead Nurturing</li>
+              <li>Data Analytics & Attribution Modeling</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">👨‍🏫</div>
+            <h3>Your Mentors</h3>
+            <ul>
+              <li>Marketing professionals with 15+ years expertise</li>
+              <li>Google Analytics & HubSpot certified trainers</li>
+              <li>Award-winning campaign strategists</li>
+              <li>Hands-on, actionable learning methodology</li>
+              <li>Real-world case study walkthroughs</li>
+              <li>Lifetime community access & support</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">🏆</div>
+            <h3>Exclusive Benefits</h3>
+            <ul>
+              <li>Professional certification badge</li>
+              <li>100+ ready-to-use templates & swipe files</li>
+              <li>Permanent access to video replays</li>
+              <li>Private Slack community membership</li>
+              <li>1-on-1 strategy call worth ₹5000</li>
+              <li>Premium marketing tools & software guides</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Registration Form Section -->
     <section class="registration" id="registration-form">
-        <div class="container">
-            <div class="form-wrapper">
-                <div class="form-header">
-                    <h2>Register for the Workshop</h2>
-                    <p>Fill in your details to secure your seat</p>
-                </div>
-                
-                <form id="registrationForm" class="registration-form">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="city">City *</label>
-                        <input type="text" id="city" name="city" placeholder="Enter your city" required>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">
-                        Submit Registration
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </form>
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-header">
+            <h2>Register for the Workshop</h2>
+            <p>Fill in your details to secure your seat</p>
+          </div>
+
+          <form id="registrationForm" class="registration-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
             </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91 XXXXX XXXXX"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="city">City *</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Enter your city"
+                required
+              />
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Submit Registration
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M7 3L14 10L7 17"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Comparison Section -->
     <section class="comparison">
-        <div class="container">
-            <h2 class="section-title">Why Choose Our Workshop?</h2>
-            <p class="section-subtitle">Discover what makes our training program exceptional</p>
-            
-            <div class="comparison-table">
-                <div class="comparison-header">
-                    <div class="feature-col">Features</div>
-                    <div class="other-col">Other Workshops</div>
-                    <div class="our-col">Our Workshop</div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="feature-col">
-                        <strong>Real Campaign Examples</strong>
-                    </div>
-                    <div class="other-col">
-                        <span class="cross">✗</span>
-                        <span>Generic slides</span>
-                    </div>
-                    <div class="our-col">
-                        <span class="check">✓</span>
-                        <span>Live campaign walkthroughs</span>
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="feature-col">
-                        <strong>Certified Trainers</strong>
-                    </div>
-                    <div class="other-col">
-                        <span class="cross">✗</span>
-                        <span>Average trainers</span>
-                    </div>
-                    <div class="our-col">
-                        <span class="check">✓</span>
-                        <span>15+ years field experience</span>
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="feature-col">
-                        <strong>Professional Badge</strong>
-                    </div>
-                    <div class="other-col">
-                        <span class="cross">✗</span>
-                        <span>Basic certificate</span>
-                    </div>
-                    <div class="our-col">
-                        <span class="check">✓</span>
-                        <span>Verified digital credential</span>
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="feature-col">
-                        <strong>Resource Library</strong>
-                    </div>
-                    <div class="other-col">
-                        <span class="cross">✗</span>
-                        <span>Limited resources</span>
-                    </div>
-                    <div class="our-col">
-                        <span class="check">✓</span>
-                        <span>100+ templates & tools</span>
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="feature-col">
-                        <strong>Recorded Sessions</strong>
-                    </div>
-                    <div class="other-col">
-                        <span class="cross">✗</span>
-                        <span>Not available</span>
-                    </div>
-                    <div class="our-col">
-                        <span class="check">✓</span>
-                        <span>Lifetime access</span>
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="feature-col">
-                        <strong>Investment</strong>
-                    </div>
-                    <div class="other-col">
-                        <span class="price-high">₹4500+</span>
-                    </div>
-                    <div class="our-col">
-                        <span class="price-low">Just ₹1000</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Why Choose Our Workshop?</h2>
+        <p class="section-subtitle">
+          Discover what makes our training program exceptional
+        </p>
+
+        <div class="comparison-table">
+          <div class="comparison-header">
+            <div class="feature-col">Features</div>
+            <div class="other-col">Other Workshops</div>
+            <div class="our-col">Our Workshop</div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="feature-col">
+              <strong>Real Campaign Examples</strong>
             </div>
-            
-            <div class="advantages">
-                <h3>Key Advantages</h3>
-                <div class="advantages-grid">
-                    <div class="advantage-item">
-                        <div class="advantage-icon">⚡</div>
-                        <div>
-                            <h4>Learn By Doing</h4>
-                            <p>75% practical exercises with live campaign examples</p>
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🌟</div>
-                        <div>
-                            <h4>Skill Advancement</h4>
-                            <p>Verified credentials to accelerate professional growth</p>
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🤝</div>
-                        <div>
-                            <h4>Networking Hub</h4>
-                            <p>Connect with 2500+ marketing professionals globally</p>
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">💰</div>
-                        <div>
-                            <h4>Maximum ROI</h4>
-                            <p>Top-tier education at incredible value pricing</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="other-col">
+              <span class="cross">✗</span>
+              <span>Generic slides</span>
             </div>
+            <div class="our-col">
+              <span class="check">✓</span>
+              <span>Live campaign walkthroughs</span>
+            </div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="feature-col">
+              <strong>Certified Trainers</strong>
+            </div>
+            <div class="other-col">
+              <span class="cross">✗</span>
+              <span>Average trainers</span>
+            </div>
+            <div class="our-col">
+              <span class="check">✓</span>
+              <span>15+ years field experience</span>
+            </div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="feature-col">
+              <strong>Professional Badge</strong>
+            </div>
+            <div class="other-col">
+              <span class="cross">✗</span>
+              <span>Basic certificate</span>
+            </div>
+            <div class="our-col">
+              <span class="check">✓</span>
+              <span>Verified digital credential</span>
+            </div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="feature-col">
+              <strong>Resource Library</strong>
+            </div>
+            <div class="other-col">
+              <span class="cross">✗</span>
+              <span>Limited resources</span>
+            </div>
+            <div class="our-col">
+              <span class="check">✓</span>
+              <span>100+ templates & tools</span>
+            </div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="feature-col">
+              <strong>Recorded Sessions</strong>
+            </div>
+            <div class="other-col">
+              <span class="cross">✗</span>
+              <span>Not available</span>
+            </div>
+            <div class="our-col">
+              <span class="check">✓</span>
+              <span>Lifetime access</span>
+            </div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="feature-col">
+              <strong>Investment</strong>
+            </div>
+            <div class="other-col">
+              <span class="price-high">₹4500+</span>
+            </div>
+            <div class="our-col">
+              <span class="price-low">Just ₹1000</span>
+            </div>
+          </div>
         </div>
+
+        <div class="advantages">
+          <h3>Key Advantages</h3>
+          <div class="advantages-grid">
+            <div class="advantage-item">
+              <div class="advantage-icon">⚡</div>
+              <div>
+                <h4>Learn By Doing</h4>
+                <p>75% practical exercises with live campaign examples</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <div class="advantage-icon">🌟</div>
+              <div>
+                <h4>Skill Advancement</h4>
+                <p>Verified credentials to accelerate professional growth</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <div class="advantage-icon">🤝</div>
+              <div>
+                <h4>Networking Hub</h4>
+                <p>Connect with 2500+ marketing professionals globally</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <div class="advantage-icon">💰</div>
+              <div>
+                <h4>Maximum ROI</h4>
+                <p>Top-tier education at incredible value pricing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-subtitle">Got questions? We've got answers</p>
-            
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Is previous marketing knowledge required?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Not at all! Our program caters to complete beginners through seasoned professionals. We build from foundational concepts to expert-level tactics progressively.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Do participants receive certification?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutely! Every graduate receives a verified digital certificate that's perfect for LinkedIn profiles, resumes, and professional portfolios.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Which platforms and software are covered?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We cover Google Ads, Meta Business Suite, Google Analytics 4, SEMrush, Mailchimp, Canva, and more. Every tool is currently used by leading marketing agencies worldwide.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How long can I access the course content?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Forever! All session recordings, bonus materials, templates, and even future curriculum updates are yours to keep with unlimited access.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Can entrepreneurs benefit from this workshop?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Ideal for entrepreneurs! Master cost-effective marketing tactics, build your brand presence, and drive measurable business growth using proven frameworks.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What is the refund policy?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We offer a 100% money-back guarantee if you're not satisfied within the first hour of the workshop. No questions asked!</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Got questions? We've got answers</p>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>Is previous marketing knowledge required?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 9L12 15L18 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
+            <div class="faq-answer">
+              <p>
+                Not at all! Our program caters to complete beginners through
+                seasoned professionals. We build from foundational concepts to
+                expert-level tactics progressively.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>Do participants receive certification?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 9L12 15L18 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! Every graduate receives a verified digital
+                certificate that's perfect for LinkedIn profiles, resumes, and
+                professional portfolios.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>Which platforms and software are covered?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 9L12 15L18 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We cover Google Ads, Meta Business Suite, Google Analytics 4,
+                SEMrush, Mailchimp, Canva, and more. Every tool is currently
+                used by leading marketing agencies worldwide.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>How long can I access the course content?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 9L12 15L18 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Forever! All session recordings, bonus materials, templates, and
+                even future curriculum updates are yours to keep with unlimited
+                access.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>Can entrepreneurs benefit from this workshop?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 9L12 15L18 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Ideal for entrepreneurs! Master cost-effective marketing
+                tactics, build your brand presence, and drive measurable
+                business growth using proven frameworks.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>What is the refund policy?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 9L12 15L18 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We offer a 100% money-back guarantee if you're not satisfied
+                within the first hour of the workshop. No questions asked!
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Fixed Footer -->
     <div class="fixed-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-price">
-                        <span class="price-label">Only</span>
-                        <span class="price-value">₹1000</span>
-                    </div>
-                    <div class="footer-seats">
-                        <span class="seats-icon">🔥</span>
-                        <span>Limited seats remaining!</span>
-                    </div>
-                </div>
-                <button class="reserve-btn" onclick="scrollToForm()">
-                    Reserve My Seat
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-price">
+              <span class="price-label">Only</span>
+              <span class="price-value">₹1000</span>
             </div>
+            <div class="footer-seats">
+              <span class="seats-icon">🔥</span>
+              <span>Limited seats remaining!</span>
+            </div>
+          </div>
+          <button class="reserve-btn" onclick="scrollToForm()">
+            Reserve My Seat
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M5 10H15M15 10L10 5M15 10L10 15"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
     </div>
 
     <script src="digital-marketing.js"></script>
-</body>
+  </body>
 </html>
